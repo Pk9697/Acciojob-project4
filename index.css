@@ -178,6 +178,16 @@ img {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+	position: relative;
+}
+
+.header__section2-card::after {
+	content: '';
+	position: absolute;
+	inset: -0.1em;
+	background: linear-gradient(276.97deg, #debbfa 0%, #a0d7f7 100%);
+	filter: blur(1.5em);
+	z-index: -1;
 }
 
 .header__section2-text-container {
@@ -421,6 +431,9 @@ img {
 	.courses {
 		padding: 4em 0;
 	}
+	.courses-container {
+		gap: 2em;
+	}
 }
 
 /* COMPANIES */
@@ -517,7 +530,6 @@ img {
 	display: grid;
 	gap: 1em;
 }
-
 
 .student-wall__card {
 	padding: 1em;
